@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "post"
 title: "Our Vision"
 categories: About
 permalink: /:categories/vision
