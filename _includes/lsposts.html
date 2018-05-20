@@ -2,11 +2,17 @@
 	<div class="row">
 	{% for post in site.posts %}
   	<!-- TODO prettify the listing of posts-->
-  	<div class="col-md-4 col-xs-12">
-  		<ul class="list-unstyled">
-  			<li><h5><a href="{{post.url}}" />{{post.title}}</h5></a></li>
-  			<li><p>{{post.content}}</p></li>
-  		</ul>
+  	<div class="card-panel hoverable">
+  		<div class="card-stacked">
+  			<div class="card-action">
+		  		<h4 class="text-center"><a href="{{post.url}}" />{{post.title}}</a></h4>
+		  	</div>
+		  	<div class="card-content">
+		  		<p class="flow-text justified">
+		  			{{ post.content }}
+		  		</p>
+		  	</div>
+  		</div>
   	</div>
 	{% endfor %}
 	</div>
